@@ -15,6 +15,7 @@ html{
   font-family: Poppins, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5rem;
 }
+<<<<<<< HEAD
 body {
   min-height: 100vh !important;
   min-height: 100dvh !important;
@@ -22,6 +23,15 @@ body {
   color: black !important;
   display: grid !important;
   grid-template-columns: auto 1fr !important; 
+=======
+body{
+  min-height: 100vh;
+  min-height: 100dvh;
+  background-color: var(--base-clr);
+  color: black;
+  display: grid;
+  grid-template-columns: auto 1fr;
+>>>>>>> cfbad12f10ca8424ed1e2ce85cee74d53c316fd5
 }
 #sidebar{
   box-sizing: border-box;
@@ -39,12 +49,20 @@ body {
   text-wrap: nowrap;
 }
 #sidebar.close{
+<<<<<<< HEAD
   padding: 5px !important;
   width: 60px !important; 
 }
 #sidebar ul{
   padding-left: 0px;
   list-style: none !important;
+=======
+  padding: 5px;
+  width: 60px;
+}
+#sidebar ul{
+  list-style: none;
+>>>>>>> cfbad12f10ca8424ed1e2ce85cee74d53c316fd5
 }
 #sidebar > ul > li:first-child{
   display: flex;
