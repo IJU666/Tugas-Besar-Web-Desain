@@ -15,7 +15,6 @@ html{
   font-family: Poppins, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5rem;
 }
-
 body {
   min-height: 100vh !important;
   min-height: 100dvh !important;
@@ -46,13 +45,7 @@ body {
 #sidebar ul{
   padding-left: 0px;
   list-style: none !important;
-  padding: 5px;
-  width: 60px;
 }
-#sidebar ul{
-  list-style: none;
-}
-
 #sidebar > ul > li:first-child{
   display: flex;
   justify-content: flex-end;
@@ -62,7 +55,6 @@ body {
   }
 }
 #sidebar ul li {
- 
  margin-bottom: 10px;
 }
 #sidebar ul li.setting a{
@@ -108,14 +100,16 @@ body {
 }
 
 #toggle-btn{
-  margin-left: auto;
-  padding: 1em;
+  margin-right: -3px;
+  margin-left: auto !important;
+  padding: .9em !important;
   border: none;
-  border-radius: .5em;
+  border-radius: .5em  ;
   background: none;
   cursor: pointer;
 
   svg{
+    
     stroke:#96b9ec;
     transition: rotate 150ms ease;
   }
