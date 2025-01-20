@@ -11,11 +11,12 @@
 *{
   margin: 0;
   padding: 0;
+  text-decoration: none !important;
 }
 html{
   font-family: Poppins, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5rem;
-  text-decoration: none !important;
+ 
 }
 body {
   min-height: 100vh !important;
@@ -25,13 +26,18 @@ body {
   grid-template-columns: auto 1fr !important; 
 }
 
+.trow th{
+  background-color: #3095E9;
+}
 
 .btn-save{
-  background-color: #96b9ec;;
+  border: 1px solid #96b9ec;
 }
 
 .btn-save:hover{
-  background-color:#5e63ff;
+  background-color:#96b9ec;
+  color: #ffffff;
+  box-shadow: 5px 5px 5px rgba(193, 193, 193, 0.5);
 }
 
 .active{
