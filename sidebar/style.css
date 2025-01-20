@@ -18,7 +18,7 @@ html{
 body {
   min-height: 100vh !important;
   min-height: 100dvh !important;
-  background-color: var(--base-clr) !important;
+  background-color: #F8FAFB !important;
   color: black !important;
   display: grid !important;
   grid-template-columns: auto 1fr !important; 
@@ -29,7 +29,7 @@ body {
   width: 250px;
   padding: 5px 1em;
   background-color: white;
-  border-right: 1px solid var(--line-clr);
+  box-shadow: 5px 5px 5px rgba(193, 193, 193, 0.5); 
 
   position: sticky;
   top: 0;
