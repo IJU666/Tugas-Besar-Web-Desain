@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <title>Modal KHS</title>
+    <style>
+        .trow th{
+            background-color: #3095E9;
+            color: white;
+        }
+        .btn-save{
+             border: 1px solid #96b9ec;
+        }
+
+    .btn-save:hover{
+        background-color:#96b9ec;
+        color: #ffffff;
+        box-shadow: 5px 5px 5px rgba(193, 193, 193, 0.5);
+    }
+    </style>
+</head>
+<body>
+    <div class="p-4">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb ps-4">
+            <li class="breadcrumb-item"><a href="#" class="fw-semibold text-dark text-decoration-none">Home</a></li>
+            <li class="breadcrumb-item fw-semibold" aria-current="page" style="color: #96B9EC;">Jadwal</li>
+          </ol>
+        </nav>
+    <div class="p-4">
+        <h5>Kartu Hasil Studi</h5><hr>
+        <div class="d-flex flex-column flex-lg-row justify-content-end gap-lg-3 gap-1" id="buttons">
+            <a class="btn btn-save mt-sm-0 mb-4 mt-3" target="_blank">Cetak</a>
+        </div>
+    <div class="col-12 mx-auto">
+        <table class="table-sm table-striped align-items-center dt-responsive w-100 table trow" id="table1">
+            <thead class="bg-gradient-primary text-white">
+                <tr>
+                    <th rowspan="2" class="font-weight-bolder text-uppercase text-center text-xs" style="width: 5%">
+                        No.</th>
+                    <th rowspan="2" class="font-weight-bolder text-uppercase ps-1 text-xs">
+                        Nama Mata Kuliah</th>
+                    <th rowspan="2" class="font-weight-bolder text-uppercase text-center text-xs">
+                        Nilai Tugas</th>
+                    <th rowspan="2" class="font-weight-bolder text-uppercase text-center text-xs">
+                        Nilai UTS</th>
+                    <th rowspan="2" class="font-weight-bolder text-uppercase text-center text-xs">
+                        Nilai UAS</th>
+                    <th colspan="4" class="font-weight-bolder text-uppercase text-center text-xs">
+                        Nilai Akhir</th>
+                </tr>
+                <tr>
+                    <th class="font-weight-bolder text-uppercase text-center text-xs">
+                        Angka</th>
+                    <th class="font-weight-bolder text-uppercase text-center text-xs">
+                        Indeks</th>
+                    <th class="font-weight-bolder text-uppercase text-center text-xs">
+                        Huruf</th>
+                    <th class="font-weight-bolder text-uppercase text-center text-xs">
+                        Keterangan</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                  <td scope="row-1">1</td>
+                  <td>Web Desain</td>
+                  <td >2</td>
+                  <td>IF23A</td>
+                  <td>Dianti Eka Aprilia S.Kom.,M.T.</td>
+                  <td>Rabu</td>
+                  <td> 07:00 - 08:40</td>
+                  <td>RKB. 08.04.60</td>
+                </tr>
+                <tr>
+                  <td scope="row-1">1</td>
+                  <td class="w-20">Web Desain</td>
+                  <td class="w-10">2</td>
+                  <td>IF23A</td>
+                  <td class="w-25 text-wrap">Dianti Eka Aprilia S.Kom.,M.T.</td>
+                  <td>Rabu</td>
+                  <td> 07:00 - 08:40</td>
+                  <td>RKB. 08.04.60</td>
+                </tr>
+            </tbody>
+        </table>
+      </div>
+    </div>
+      <script src="bootstrap/js/bootstrap.js"></script>
+</body>
+</html>
