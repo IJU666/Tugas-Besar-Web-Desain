@@ -138,7 +138,12 @@
             </nav>
             <!-- button -->
           <!-- end of button -->
-
+        <div class="mb-4">
+          <h5>Kartu Rancangan Studi</h5><hr>
+          <div class="">
+            <p><span class="badge bg-danger">DITUTUP</span> Pengisian KRS sudah ditutup</p>
+          </div>
+        </div>
         <div class="d-flex flex-row gap-3">
           <div class="card d-flex flex-row gap-3 "  style="width: 32rem;">
             <img style="margin-top: 40px; margin-left: 20px;" height="50px" width="50px" src="./asset/img/semester.png" alt="">
@@ -162,14 +167,89 @@
               </div>
               <div class="h4 pb-2 text-danger border-bottom">
               </div>
-              <a href="khstabel.html" class="card-link">Lihat Detail <i class="fa-solid fa-arrow-right-long"></i></a>
+                <!-- btn trigger modal -->
+                <button type="button" class="btn position-absolute translate-middle mx-5 mt-3" data-bs-toggle="modal" data-bs-target="#modalKRS1" >
+                  Lihat Detail <i class="fa-solid fa-arrow-right-long"></i>
+                  </button>
+                  <!-- Modal -->
+                  
+                  <div class="modal fade" id="modalKRS1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                
+                    <div class="modal-dialog modal-xl">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="staticBackdropLabel">Kartu Rancangan Studi Semester 1</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="d-flex justify-content-end  id="buttons">
+                            <a href="asset/[Project Based ] Soal UAS Manajemen Basis Data-Informatika-IF23A.docx" download="[Project Based ] Soal UAS Manajemen Basis Data-Informatika-IF23A.docx" class="btn btn-save mt-sm-0 mb-2 mt-1" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-printer me-2 " viewBox="0 0 16 16">
+                              <path d="M2.5 8a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1"/>
+                              <path d="M5 1a2 2 0 0 0-2 2v2H2a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h1v1a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-1h1a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-1V3a2 2 0 0 0-2-2zM4 3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v2H4zm1 5a2 2 0 0 0-2 2v1H2a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v-1a2 2 0 0 0-2-2zm7 2v3a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1"/>
+                            </svg>Cetak</a>
+                        </div>
+                          <div class="col-12 mx-auto">
+                            <table class="table-sm table-striped align-items-center dt-responsive w-100 table trow" id="table1">
+                                <thead class="bg-gradient-primary text-white">
+                                    <tr>
+                                        <th  class="font-weight-bolder text-uppercase text-center text-xs" style="width: 5%">
+                                            No.</th>
+                                        <th  class="font-weight-bolder text-uppercase ps-1 text-xs">
+                                            Nama Mata Kuliah</th>
+                                        <th  class="font-weight-bolder text-uppercase text-center text-xs">
+                                            SKS</th>
+                                        <th  class="font-weight-bolder text-uppercase text-center text-xs">
+                                            Semester</th>
+                                        <th class="font-weight-bolder text-uppercase text-center text-xs">
+                                            Kela</th>
+                                        <th class="font-weight-bolder text-uppercase text-center text-xs">
+                                            Dosen Pengampu</th>
+                                        <th class="font-weight-bolder text-uppercase text-center text-xs">
+                                              Jadwal</th>
+                                        <th class="font-weight-bolder text-uppercase text-center text-xs">
+                                                Status</th>
+                                    </tr>
+                
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                      <td scope="row-1">1</td>
+                                      <td>Web Desain</td>
+                                      <td >1</td>
+                                      <td>1</td>
+                                      <td>IF23A</td>
+                                      <td>Dianti Eka Aprilia S.Kom.,M.T.</td>
+                                      <td> 07:00 - 08:40</td>
+                                      <td class="text-center"><span class="badge bg-success">Lulus</span></td>
+                                    </tr>
+                                    <tr>
+                                      <td scope="row-1">1</td>
+                                      <td class="w-20">Web Desain</td>
+                                      <td class="w-10">2</td>
+                                      <td>IF23A</td>
+                                      <td class="w-25 text-wrap">Dianti Eka Aprilia S.Kom.,M.T.</td>
+                                      <td>Rabu</td>
+                                      <td> 07:00 - 08:40</td>
+                                      <td class="text-center"><span class="badge bg-success">Lulus</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
             </div>
           </div>
           <!-- semester 2 -->
-          <div class="card" style="width: 18rem;">
+          <div style="width: 18rem;">
             <div class="card d-flex flex-row gap-3 "  style="width: 32rem;">
               <img style="margin-top: 40px; margin-left: 20px;" height="50px" width="50px" src="./asset/img/semester.png" alt="">
-              <div class="card-body">
+              <div class="card-body mb-4">
                 <h5 class="card-title">Semester 2</h5>
                 <div class="d-flex flex-row gap-3">
                   <h6 class="card-subtitle mb-2 pt-2  text-body-secondary">
@@ -189,7 +269,82 @@
                 </div>
                 <div class="h4 pb-2 text-danger border-bottom">
                 </div>
-                <a href="#" class="card-link">Lihat Detail <i class="fa-solid fa-arrow-right-long"></i></a>
+                  <!-- btn trigger modal -->
+              <button type="button" class="btn position-absolute translate-middle mx-5 mt-3" data-bs-toggle="modal" data-bs-target="#modalKRS2" >
+                Lihat Detail <i class="fa-solid fa-arrow-right-long"></i>
+                </button>
+                <!-- Modal -->
+                
+                <div class="modal fade" id="modalKRS2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                
+                  <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Kartu Rancangan Studi Semester 2</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="d-flex justify-content-end  id="buttons">
+                          <a href="asset/[Project Based ] Soal UAS Manajemen Basis Data-Informatika-IF23A.docx" download="[Project Based ] Soal UAS Manajemen Basis Data-Informatika-IF23A.docx" class="btn btn-save mt-sm-0 mb-2 mt-1" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-printer me-2 " viewBox="0 0 16 16">
+                            <path d="M2.5 8a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1"/>
+                            <path d="M5 1a2 2 0 0 0-2 2v2H2a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h1v1a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-1h1a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-1V3a2 2 0 0 0-2-2zM4 3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v2H4zm1 5a2 2 0 0 0-2 2v1H2a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v-1a2 2 0 0 0-2-2zm7 2v3a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1"/>
+                          </svg>Cetak</a>
+                      </div>
+                        <div class="col-12 mx-auto">
+                          <table class="table-sm table-striped align-items-center dt-responsive w-100 table trow" id="table1">
+                              <thead class="bg-gradient-primary text-white">
+                                  <tr>
+                                      <th  class="font-weight-bolder text-uppercase text-center text-xs" style="width: 5%">
+                                          No.</th>
+                                      <th  class="font-weight-bolder text-uppercase ps-1 text-xs">
+                                          Nama Mata Kuliah</th>
+                                      <th  class="font-weight-bolder text-uppercase text-center text-xs">
+                                          SKS</th>
+                                      <th  class="font-weight-bolder text-uppercase text-center text-xs">
+                                          Semester</th>
+                                      <th class="font-weight-bolder text-uppercase text-center text-xs">
+                                          Kela</th>
+                                      <th class="font-weight-bolder text-uppercase text-center text-xs">
+                                          Dosen Pengampu</th>
+                                      <th class="font-weight-bolder text-uppercase text-center text-xs">
+                                            Jadwal</th>
+                                      <th class="font-weight-bolder text-uppercase text-center text-xs">
+                                              Status</th>
+                                  </tr>
+              
+                              </thead>
+                              <tbody>
+                                  <tr>
+                                    <td scope="row-1">1</td>
+                                    <td>Web Desain</td>
+                                    <td >1</td>
+                                    <td>1</td>
+                                    <td>IF23A</td>
+                                    <td>Dianti Eka Aprilia S.Kom.,M.T.</td>
+                                    <td> 07:00 - 08:40</td>
+                                    <td class="text-center"><span class="badge bg-success">Lulus</span></td>
+                                  </tr>
+                                  <tr>
+                                    <td scope="row-1">1</td>
+                                    <td>Web Desain</td>
+                                    <td >1</td>
+                                    <td>1</td>
+                                    <td>IF23A</td>
+                                    <td>Dianti Eka Aprilia S.Kom.,M.T.</td>
+                                    <td> 07:00 - 08:40</td>
+                                    <td class="text-center"><span class="badge bg-success">Lulus</span></td>
+                                  </tr>
+                              </tbody>
+                          </table>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -198,7 +353,7 @@
         <div class="card mt-3" style="width: 18rem;">
           <div class="card d-flex flex-row gap-3 "  style="width: 32rem;">
             <img style="margin-top: 40px; margin-left: 20px;" height="50px" width="50px" src="./asset/img/semester.png" alt="">
-            <div class="card-body">
+            <div class="card-body mb-4">
               <h5 class="card-title">Semester 3</h5>
               <div class="d-flex flex-row gap-3">
                 <h6 class="card-subtitle mb-2 pt-2  text-body-secondary">
@@ -218,7 +373,82 @@
               </div>
               <div class="h4 pb-2 text-danger border-bottom">
               </div>
-              <a href="#" class="card-link">Lihat Detail <i class="fa-solid fa-arrow-right-long"></i></a>
+                <!-- btn trigger modal -->
+                <button type="button" class="btn position-absolute translate-middle mx-5 mt-3" data-bs-toggle="modal" data-bs-target="#modalKRS3" >
+                  Lihat Detail <i class="fa-solid fa-arrow-right-long"></i>
+                  </button>
+                  <!-- Modal -->
+                  
+                  <div class="modal fade" id="modalKRS3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                
+                    <div class="modal-dialog modal-xl">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="staticBackdropLabel">Kartu Rancangan Studi Semester 3</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="d-flex justify-content-end  id="buttons">
+                            <a href="asset/[Project Based ] Soal UAS Manajemen Basis Data-Informatika-IF23A.docx" download="[Project Based ] Soal UAS Manajemen Basis Data-Informatika-IF23A.docx" class="btn btn-save mt-sm-0 mb-2 mt-1" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-printer me-2 " viewBox="0 0 16 16">
+                              <path d="M2.5 8a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1"/>
+                              <path d="M5 1a2 2 0 0 0-2 2v2H2a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h1v1a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-1h1a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-1V3a2 2 0 0 0-2-2zM4 3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v2H4zm1 5a2 2 0 0 0-2 2v1H2a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v-1a2 2 0 0 0-2-2zm7 2v3a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1"/>
+                            </svg>Cetak</a>
+                        </div>
+                          <div class="col-12 mx-auto">
+                            <table class="table-sm table-striped align-items-center dt-responsive w-100 table trow" id="table1">
+                                <thead class="bg-gradient-primary text-white">
+                                    <tr>
+                                        <th  class="font-weight-bolder text-uppercase text-center text-xs" style="width: 5%">
+                                            No.</th>
+                                        <th  class="font-weight-bolder text-uppercase ps-1 text-xs">
+                                            Nama Mata Kuliah</th>
+                                        <th  class="font-weight-bolder text-uppercase text-center text-xs">
+                                            SKS</th>
+                                        <th  class="font-weight-bolder text-uppercase text-center text-xs">
+                                            Semester</th>
+                                        <th class="font-weight-bolder text-uppercase text-center text-xs">
+                                            Kela</th>
+                                        <th class="font-weight-bolder text-uppercase text-center text-xs">
+                                            Dosen Pengampu</th>
+                                        <th class="font-weight-bolder text-uppercase text-center text-xs">
+                                              Jadwal</th>
+                                        <th class="font-weight-bolder text-uppercase text-center text-xs">
+                                                Status</th>
+                                    </tr>
+                
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                      <td scope="row-1">1</td>
+                                      <td>Web Desain</td>
+                                      <td >1</td>
+                                      <td>1</td>
+                                      <td>IF23A</td>
+                                      <td>Dianti Eka Aprilia S.Kom.,M.T.</td>
+                                      <td> 07:00 - 08:40</td>
+                                      <td class="text-center"><span class="badge bg-success">Lulus</span></td>
+                                    </tr>
+                                    <tr>
+                                      <td scope="row-1">1</td>
+                                      <td>Web Desain</td>
+                                      <td >1</td>
+                                      <td>1</td>
+                                      <td>IF23A</td>
+                                      <td>Dianti Eka Aprilia S.Kom.,M.T.</td>
+                                      <td> 07:00 - 08:40</td>
+                                      <td class="text-center"><span class="badge bg-success">Lulus</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
             </div>
           </div>
         </div>
