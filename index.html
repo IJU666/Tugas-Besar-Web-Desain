@@ -1,14 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 </head>
+<style>
+.login-button{
+  background-color: #275DAD;
+  color: #ffffff;
+  transition: 1;
+}
+.login-button:hover{
+  background-color: #244980;
+  color: #e2e2e2;
+}
+</style>
 <body>
-
-   
+    <div class="container align-middle">
+   <div class="col-lg-9 mx-auto my-auto rounded d-flex position-absolute top-50 start-50 translate-middle" style="background-color: #F0F0F0;">
+    
+        <div class="col-lg-7 mx-auto m-auto">
+            <!-- <div   class="col-lg-7 mx-auto alert alert-danger text-center" role="alert"> -->
+              
+              <div id="modal-alert" class="alert alert-danger col-lg-7 mx-auto alert-dismissible fade show" role="alert"  style="display: none;">
+                <strong>!</strong> Username atau Password tidak sesuai
+                <button type="button" class="btn-close" id="close-alert" onclick="tutup()"></button>
+              <!-- </div> -->
+            </div>
+            <h3 class="text-center  mb-lg-5" style="color: #434343;">Login</h3>
+            <form name="login">
+                <div class="mb-3 col-lg-7 mx-auto">
+                  <label for="exampleInputEmail1" class="form-label fw-semibold text-secondary">Username</label>
+                  <input type="text" name="username" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                  <div id="emailHelp" class="form-text text-secondary">Gunakan username yang sudah diberikan pihak akademik</div>
+                </div>
+                <div class="mb-3 col-lg-7 mx-auto">
+                  <label for="exampleInputPassword1" class="form-label fw-semibold text-secondary">Kata Sandi</label>
+                  <input type="password" name="pass" class="form-control" id="exampleInputPassword1" required>
+                </div>
+                <div class="col-lg-7 row mx-auto">
+                  <div class="col-lg-6 mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label text-secondary" for="exampleCheck1" >Ingat Saya</label>
+                  </div>
+                <div class=" col-lg-6 mb-3 form-check text-end">
+                  <a href="lupaPW.html" class="text-decoration-none border-bottom border-2 pb-1 border-danger text-danger fw-semibold text-secondary">Lupa Password</a>
+                </div>
+              </div>
+            </form>
+            <div class="col-lg-7 mx-auto">
+              <button class="btn col-lg-12 login-button fw-semibold" id="btnSubmit" onclick="cekLogin()">Submit</button>
+            </div>
+        </div>
+        
+        <div class="col-lg-5">
+            <img src="asset/img/img-login.png" alt="" srcset="" class="img-fluid">
+        </div>
+    </div>
+   </div>
 </body>
+
 <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="js/record.js"></script>
 </html>
