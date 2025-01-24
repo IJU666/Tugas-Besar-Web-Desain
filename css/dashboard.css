@@ -6,30 +6,74 @@
   --text-clr: #e6e6ef;
   --accent-clr: #5e63ff;
   --secondary-text-clr: #b0b3c1;
+
 }
 *{
   margin: 0;
   padding: 0;
+  text-decoration: none !important;
 }
 html{
   font-family: Poppins, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5rem;
+ 
 }
 body {
   min-height: 100vh !important;
   min-height: 100dvh !important;
-  background-color: #F8FAFB!important;
-  color: black !important;
+  background-color: white;
   display: grid !important;
   grid-template-columns: auto 1fr !important; 
 }
+
+.trow th{
+  background-color: #3095E9;
+  color: white;
+}
+
+.btn-save{
+  border: 1px solid #96b9ec;
+}
+
+.btn-save:hover{
+  background-color:#96b9ec;
+  color: #ffffff;
+  box-shadow: 5px 5px 5px rgba(193, 193, 193, 0.5);
+}
+
+.active{
+    border: none;
+    border-radius: .85em;
+    background-color:#96b9ec;
+    color: white;
+   svg{
+    fill:#ffffff;
+  }
+}
+
+
+#sidebar ul li.active a{
+    background-color:#96b9ec;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(193, 193, 193, 0.5);
+   svg{
+    fill:#ffffff;
+  }
+}
+
+#sidebar ul li a{
+    fill: white;
+}
+
+
 #sidebar{
   box-sizing: border-box;
   height: 100vh;
   width: 250px;
   padding: 5px 1em;
-  background-color: white;
-  border-right: 1px solid rgb(217, 217, 217);
+  background-color: white ;
+  box-shadow: 5px 5px 5px  grey ;
 
   position: sticky;
   top: 0;
@@ -54,12 +98,6 @@ body {
     font-weight: 900;
   }
 }
-#sidebar ul li a :active {
-  background-color: #96b9ec;
-  color: white;
-  box-shadow: 5px 5px 5px rgba(193, 193, 193, 0.5)
- 
-}
 #sidebar ul li {
  margin-bottom: 10px;
 }
@@ -78,15 +116,10 @@ body {
     fill:#ffffff;
   }
 }
-#sidebar ul li.active a{
-  background-color: #96b9ec;
-  color: white;
-  box-shadow: 5px 5px 5px rgba(193, 193, 193, 0.5);
-  svg{
-    fill:#ffffff;
-  }
-}
 
+.atas{
+  color: #96b9ec;
+}
 
 #sidebar a, #sidebar .dropdown-btn, #sidebar .logo{
   border-radius: .5em;
@@ -133,6 +166,8 @@ body {
   svg{
     stroke: white;
   }
+ 
+
 }
 
 .greet {
@@ -148,7 +183,7 @@ body {
   
 }
 
- .krs  {
+ /* .krs  {
   gap: 3em;
   font-size: 20px;
   padding: .5em;
@@ -195,4 +230,4 @@ body {
 .trow th{
   color: white;
   background-color: #3095E9;
-}
+} */
