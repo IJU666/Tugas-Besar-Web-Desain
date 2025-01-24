@@ -20,7 +20,15 @@
 <body>
     <div class="container align-middle">
    <div class="col-lg-9 mx-auto my-auto rounded d-flex position-absolute top-50 start-50 translate-middle" style="background-color: #F0F0F0;">
+    
         <div class="col-lg-7 mx-auto m-auto">
+            <!-- <div   class="col-lg-7 mx-auto alert alert-danger text-center" role="alert"> -->
+              
+              <div id="modal-alert" class="alert alert-danger col-lg-7 mx-auto alert-dismissible fade show" role="alert"  style="display: none;">
+                <strong>!</strong> Username atau Password tidak sesuai
+                <button type="button" class="btn-close" id="close-alert" onclick="tutup()"></button>
+              <!-- </div> -->
+            </div>
             <h3 class="text-center  mb-lg-5" style="color: #434343;">Login</h3>
             <form name="login">
                 <div class="mb-3 col-lg-7 mx-auto">
@@ -46,6 +54,7 @@
               <button class="btn col-lg-12 login-button fw-semibold" id="btnSubmit" onclick="cekLogin()">Submit</button>
             </div>
         </div>
+        
         <div class="col-lg-5">
             <img src="asset/img/img-login.png" alt="" srcset="" class="img-fluid">
         </div>

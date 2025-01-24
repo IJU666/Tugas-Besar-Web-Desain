@@ -7,6 +7,11 @@ function cekLogin() {
        
         window.location.href="./dashboard.html";
     } else{
-        alert("Username atau Password tidak sesuai");
+        // alert("Username atau Password tidak sesuai");
+        document.getElementById('modal-alert').style.display = "block";
     }
+}
+
+function tutup() {
+    document.getElementById('modal-alert').style.display = "none";
 }
